@@ -1,7 +1,6 @@
-import { Search, Filter, Mail, Phone, ShoppingBag, RefreshCw, ChevronDown, X, Eye, Store, Users } from 'lucide-react';
-import { useState, useEffect, useRef } from 'react';
+import { Search, Mail, Phone, ShoppingBag, RefreshCw, X, Eye, Store, Users } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
-import { useToast } from '../../context/ToastContext';
 
 function CustomerOrdersModal({ customer, onClose }: { customer: any; onClose: () => void }) {
   const [orders, setOrders] = useState<any[]>([]);
@@ -184,7 +183,7 @@ export function Customers() {
   const [selectedCustomer, setSelectedCustomer] = useState<any | null>(null);
   const [selectedSeller, setSelectedSeller] = useState<any | null>(null);
   const [orderCounts, setOrderCounts] = useState<Record<string, number>>({});
-  const { showToast } = useToast();
+
 
   useEffect(() => {
     fetchData();

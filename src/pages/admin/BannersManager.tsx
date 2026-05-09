@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { useToast } from '../../context/ToastContext';
 import { Plus, Trash2, Image as ImageIcon, Link as LinkIcon, Loader2 } from 'lucide-react';

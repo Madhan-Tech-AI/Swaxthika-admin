@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { useToast } from '../../context/ToastContext';
-import { Check, X, Loader2, Store, User, Mail, Phone, MapPin, Briefcase, Key, Copy, CheckCircle2, ExternalLink } from 'lucide-react';
+import { Check, X, Loader2, Store, User, Mail, Phone, MapPin, Briefcase, Key, Copy, CheckCircle2 } from 'lucide-react';
 
 export const SellerApplications = () => {
   const [applications, setApplications] = useState<any[]>([]);

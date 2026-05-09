@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { supabase } from '../../lib/supabase';
 import { useToast } from '../../context/ToastContext';
-import { Upload, Loader2, Image as ImageIcon, Link as LinkIcon, Check, X, RefreshCw } from 'lucide-react';
+import { Upload, Loader2, Image as ImageIcon, Link as LinkIcon, RefreshCw } from 'lucide-react';
 
 interface BannerSlot {
   id?: string;

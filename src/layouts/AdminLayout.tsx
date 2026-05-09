@@ -1,9 +1,9 @@
-import { LayoutDashboard, ShoppingBag, Users, Package, Settings, LogOut, Search, Bell, Lock, Image, X, Store, FileImage, Sparkles, LogIn, Mail, Layout } from 'lucide-react';
+import { LayoutDashboard, ShoppingBag, Users, Package, Settings, LogOut, Search, Bell, Lock, Image, X, Store, Sparkles, LogIn, Mail, Layout } from 'lucide-react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 
-const ADMIN_SESSION_KEY = 'swaxtika_admin_auth';
+
 
 export function AdminLayout() {
   const location = useLocation();
